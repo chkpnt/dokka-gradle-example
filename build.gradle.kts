@@ -22,9 +22,7 @@ tasks.withType<DokkaTask>().configureEach {
             includes.from("Module.md")
             sourceLink {
                 localDirectory.set(file("src/main/kotlin"))
-                remoteUrl.set(URL("https://github.com/Kotlin/dokka/tree/master/" +
-                        "examples/gradle/dokka-gradle-example/src/main/kotlin"
-                ))
+                remoteUrl.set(URL("https://github.com/chkpnt/dokka-gradle-example/tree/master/src/main/kotlin"))
                 remoteLineSuffix.set("#L")
             }
         }
