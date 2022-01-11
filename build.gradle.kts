@@ -28,3 +28,14 @@ tasks.withType<DokkaTask>().configureEach {
         }
     }
 }
+
+tasks.register("printSourceSetInformation") {
+    doLast {
+        sourceSets.forEach { srcSet ->
+            println("[${srcSet.name}]")
+            println("-->Source directories: ${srcSet.allJava.srcDirs}")
+            println("-->Output directories: ${srcSet.output.classesDirs.files}")
+            println("")
+        }
+    }
+}
