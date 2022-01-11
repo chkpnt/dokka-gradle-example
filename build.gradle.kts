@@ -2,14 +2,13 @@ import org.jetbrains.dokka.gradle.DokkaTask
 import java.net.URL
 
 plugins {
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm")
     id("chkpnt-docs")
 }
 
 repositories {
     mavenCentral()
 }
-
 dependencies {
     implementation(kotlin("stdlib"))
     testImplementation(kotlin("test-junit"))
